@@ -1,0 +1,15 @@
+{
+    "Method" : [
+        "OPTIONS",
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT",
+        "DELETE",
+        "TRACE",
+        "CONNECT"
+    ],
+    "AllowedMethods" : [
+        "GET"
+    ]
+}
