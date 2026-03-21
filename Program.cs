@@ -1,28 +1,34 @@
 ﻿using System.Net.Sockets;
 using System.Net.Security;
 using System.Text;
+using System.Text.Json;
+using Header;
 
 // Relevant Attributes
 string targetHost = "www.example.com";
 int port = 443;
 
+// Creating Headers
+RequestHeader rH = JsonSerializer.Deserialize<RequestHeader>(File.ReadAllText("./JSON/headers.json"));
+Console.WriteLine("RH: "+ rH.Connection);
+
 // Creating HTTP Message Object
 Message message = new Message(targetHost, port);
 
-string responseOutputFilePath = $"./output/{message.METHOD}_{message.HOST}_{message.HTTP_VERSION}.txt";
+string responseOutputFilePath = $"./output/{message.METHOD}_{message.HOST}_{message.HTTP_VERSION}_{message.DATE.Second}.txt";
 
  // Connect via TCP
 using TcpClient tcpClient = new TcpClient(message.HOST, message.PORT);
 
 // Wrap TCP stream in SslStream for TLS
 using SslStream sslStream = new SslStream(tcpClient.GetStream(), false);
-sslStream.AuthenticateAsClient(targetHost);
+sslStream.AuthenticateAsClient(message.HOST);
 
 // Build HTTP GET request
 string request = $"GET / HTTP/1.1\r\n" +
-                    $"Host: {targetHost}\r\n" +
+                    $"Host: {message.HOST}\r\n" +
                     $"Connection: close\r\n" +
-                    $"Date: {DateTime.Today}\r\n\r\n";
+                    $"Date: {message.DATE}\r\n\r\n";
 
 File.WriteAllText(responseOutputFilePath, "| REQUEST |\r\n\r\n" + request);
 

@@ -12,3 +12,4 @@ C:\Users\User\Documents\VS Code Files\HTTP-Handler\obj\Debug\net9.0\refint\HTTP-
 C:\Users\User\Documents\VS Code Files\HTTP-Handler\obj\Debug\net9.0\HTTP-Handler.pdb
 C:\Users\User\Documents\VS Code Files\HTTP-Handler\obj\Debug\net9.0\HTTP-Handler.genruntimeconfig.cache
 C:\Users\User\Documents\VS Code Files\HTTP-Handler\obj\Debug\net9.0\ref\HTTP-Handler.dll
+C:\Users\User\Documents\VS Code Files\HTTP-Handler\obj\Debug\net9.0\HTTP-Handler.sourcelink.json

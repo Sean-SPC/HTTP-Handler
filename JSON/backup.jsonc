@@ -1,7 +1,7 @@
 {
     "general-header" : {
         "Cache-Control" : "",
-        "Connection" : "",           
+        "Connection" : "CONNECTION!",           
         "Date" : "",
         "Pragma" : "",
         "Trailer" : "",
@@ -11,13 +11,11 @@
         "Warning" : ""
     },
     "request-header" : {
-        // Request-Line   = Method SP Request-URI SP HTTP-Version CRLF
         "Request-Line" : {
             "Method" : "",
             "Request-URI" : "",
             "HTTP-Version" : ""
         },
-        "CRLF" : "",
         "Message-Body" : "",
         "Accept" : "",
         "Accept-Charset" : "",
@@ -40,7 +38,6 @@
         "User-Agent" : ""
     },
     "response-header" : {
-        // Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF
         "Status-Line" : {
             "HTTP-Version" : "",
             "Status-Code" : "",

@@ -1,5 +1,7 @@
 using System.ComponentModel;
+using System.Dynamic;
 using System.Net;
+using System.Reflection.Metadata.Ecma335;
 
 class Message
 {
@@ -9,6 +11,8 @@ class Message
     public int PORT { get { return Port; } set{ Port = value; } }
     private string Http_Version = "1.1";
     public string HTTP_VERSION { get { return Http_Version; } set { Http_Version = value; }}
+    private DateTime Date = DateTime.Today;
+    public DateTime DATE { get { return Date; } set { Date = value; } }
     public enum HTTP_TYPE
     {
         REQUEST,
