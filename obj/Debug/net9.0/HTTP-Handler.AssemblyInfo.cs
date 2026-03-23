@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HTTP-Handler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02d88f1753dd65d9c352f98b2d8bebfbd0383fbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3a8619fa3d4bd5e41680c0402b5a77680781064")]
 [assembly: System.Reflection.AssemblyProductAttribute("HTTP-Handler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HTTP-Handler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

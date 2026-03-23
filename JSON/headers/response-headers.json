@@ -1,0 +1,18 @@
+{
+    "response-header" : {
+        "Status-Line" : {
+            "HTTP-Version" : "",
+            "Status-Code" : "",
+            "Reason Phrase" : ""
+        },
+        "Accept-Ranges" : "",
+        "Age" : "",
+        "ETag" : "",
+        "Location" : "",
+        "Proxy-Authenticate" : "",
+        "Retry-After" : "",
+        "Server" : "",
+        "Vary" : "",
+        "WWW-Authenticate" : ""
+    }
+}

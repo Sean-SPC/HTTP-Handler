@@ -1,7 +1,7 @@
 {
     "general-header" : {
         "Cache-Control" : "",
-        "Connection" : "CONNECTION!",           
+        "Connection" : "CONNECTION DEFAULT",           
         "Date" : "",
         "Pragma" : "",
         "Trailer" : "",

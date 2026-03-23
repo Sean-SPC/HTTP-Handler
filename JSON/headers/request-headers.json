@@ -1,20 +1,11 @@
 {
-    "Cache_Control" : "",
-    "Connection" : "Request CONNECTION!",           
-    "Date" : "",
-    "Pragma" : "",
-    "Trailer" : "",
-    "Transfer_Encoding" : "",
-    "Via" : "",
-    "Upgrade" : "",
-    "Warning" : "", 
     "Request-Line" : {
         "Method" : "",
         "Request-URI" : "",
         "HTTP-Version" : ""
     },
     "Message-Body" : "",
-    "Accept" : "",
+    "Accept" : "ACCEPT",
     "Accept-Charset" : "",
     "Accept-Encoding" : "",
     "Accept-Language" : "",
